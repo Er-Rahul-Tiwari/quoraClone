@@ -1,0 +1,29 @@
+@import "./abstracts/variables.scss";
+@import "./base.scss";
+@import "./abstracts/mixins.scss";
+@import "./typography/typography.scss";
+@import "./base/utilities.scss";
+
+@import "./components/button.scss";
+@import "./components/alert.scss";
+@import "./components/loader.scss";
+@import "./components/accordion.scss";
+@import "./components/slider.scss";
+@import "./components/popup.scss";
+@import "./components/dropdown.scss";
+
+
+@import "./components/cards/topUsers&Keywords.scss";
+@import "./components/cards/mainCard.scss";
+@import "./components/cards/howItWork.scss";
+@import "./components/cards/follower&followingCard.scss";
+
+@import "./components/nav/navbar.scss";
+@import "./components/nav/arrowNav.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+.font {
+    font-family: "Manrope", sans-serif;
+}
+  

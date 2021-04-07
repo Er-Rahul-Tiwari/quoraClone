@@ -1,0 +1,51 @@
+
+.itWork{
+    
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-gap: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+
+    background-color: $color-primary-a;
+    padding: 3rem;
+    border-radius: .4rem;
+
+    @media only screen and (max-width: $bp-small){
+        padding: 1.5rem;
+    }
+    
+    &__heading{
+        font-weight: 600;
+        
+        display: grid;
+        justify-self: start;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    &__message{
+
+        display: grid;
+        justify-self: start;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        font-size: $font-13;
+    }
+    &__cross{
+        grid-row: 1 / -1;
+        grid-column: 2 / 3;
+        display: grid;
+        justify-self: start;
+        cursor: pointer;
+    }
+    &__icon{
+        width: 2.2rem;
+    }
+    &__btn{
+        padding: 2px 1rem;
+        border-radius: 2px;
+        display: grid;
+        justify-self: start;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+}

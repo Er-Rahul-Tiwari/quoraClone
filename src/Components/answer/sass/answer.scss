@@ -1,0 +1,261 @@
+.answerNavs {
+    grid-column: col-start 2 / center-end;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 0 1.5rem;
+    }
+}
+
+.answerNav {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-gap: 1rem;
+
+    @media only screen and (max-width: $bp-small){
+        grid-gap: .5rem;
+    }
+    
+    &__icon {
+        width: 3rem;
+        stroke: $color-black-4f;
+        stroke-width: 2px;
+    }
+
+    &__heading {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    &__items {
+        grid-row: 3/4;
+        grid-column: 1/2;
+
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-auto-flow: column;
+        justify-content: start;
+    }
+
+    &__link {
+        font-size: $font-13;
+        color: $color-6;        
+    }
+
+    &__arr {
+        grid-row: 2/4;
+        grid-column: 2/-1;
+
+        display: grid;
+        justify-items: center;
+    }
+}
+
+.answer {
+    grid-column: col-start 2 / center-end;
+
+    display: grid;
+    grid-gap: 2rem;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 0 1.5rem;
+
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        grid-auto-flow: column;
+        grid-gap: 3rem;
+        padding: 1rem 0;
+        align-content: center;
+        align-items: center;
+
+        color: $color-secondary-light-1;        
+        text-transform: capitalize;
+
+        @media only screen and (max-width: $bp-small){
+            grid-column-gap: 1rem;
+        }
+        &--start {
+            justify-content: start;
+        }
+
+        &--end {
+            justify-content: end;
+        }
+    }
+
+    &__link {
+        padding: 2px 1rem;
+        border-radius: 2px;
+        color: $color-6;
+        font-size: $font-13;
+
+        &--active {
+            background-color: $color-primary-a;
+            color: $color-secondary;
+        }
+
+        &--active--black {
+            background-color: $color-black-4f;
+            color: $color-white;
+        }
+    }
+
+    &__rightIcon {
+        display: grid;
+        justify-self: end;
+    }
+
+    &__icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        stroke: $color-secondary-light-3;
+        stroke-width: 2px;
+
+        display: grid;
+        align-self: center;
+    }
+}
+
+.card {
+    
+
+    &__dots {
+        grid-row: 1/2;
+        grid-column: 1/3;
+        justify-self: end;
+    }
+
+    &__avtar-container {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        text-align: center;
+    }  
+    &__avtar-img{
+        width: 8rem;
+        height: 8rem;               
+        border-radius: 50%;
+        object-fit: cover;
+
+        @media only screen and (max-width: $bp-small){
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__avtar-Name {
+        font-size: $font-15;
+        color: $color-black;
+        text-transform: capitalize;
+        margin-top: 1rem;
+    }
+
+    &__answer {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    &__messageReply{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        margin-bottom: 1rem;
+        &::placeholder{
+            font-size: $font-18;
+        }
+    }
+    &__ansReply {
+        grid-row: 3/4;
+        grid-column: 2/3;
+
+        display: grid;
+        grid-auto-flow: column;
+        align-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-small){
+            grid-column: 1/-1;
+            grid-gap: 1rem;
+        }
+    }
+
+    &__views {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        justify-content: start;
+        font-size: $font-16;
+
+        @media only screen and (max-width: $bp-small){
+        }
+        &--select {
+            color: $color-black-4f;
+            border: none;
+            background-color: transparent;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__repBtn {
+        background-color: $color-green-4;
+        padding: 0.4rem 2rem;
+        color: $color-white;
+        border-radius: 2px;
+        display: grid;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-small){
+            padding: .4rem 1rem;
+        }
+    }
+
+    &__vote {
+        display: grid;
+        grid-auto-flow: column;
+        justify-self: end;
+        align-content: center;
+        align-items: center;
+        grid-column-gap: 2rem;
+
+        @media only screen and (max-width: $bp-medium){
+            grid-column-gap: .6rem;
+        }
+    }
+
+    &__voteBox {
+        display: grid;
+        grid-auto-flow: column;
+        justify-self: start;
+        align-content: center;
+        align-items: center;
+        grid-gap: 0.5rem;
+    }
+
+    &__downNum {
+        color: $color-green;
+        font-weight: 700;
+    }
+
+    &__upNum {
+        font-weight: 700;
+        color: $color-red;
+    }
+
+    &__answerGap{
+        display: grid;
+        grid-column-gap: 3rem;
+        grid-row-gap: 1rem;
+
+        @media only screen and (max-width:$bp-small){
+            grid-column-gap: 1rem;
+        }
+    }
+    &__bgReplies{
+        background-color: $color-green-light-2;
+    }
+}

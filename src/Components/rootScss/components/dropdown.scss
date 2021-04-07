@@ -1,0 +1,78 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 0;
+    }
+}
+
+li a {
+    color: $color-6;
+}
+
+li:hover,
+li:focus-within {
+    background: $color-white;
+    cursor: pointer;
+}
+
+li:focus-within a {
+    outline: none;
+}
+
+ul li ul {
+    background: $color-primary-2;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    box-shadow: 0 0 1rem rgba(0,0,0,.1);
+
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+
+.dropdown {
+    &__link{
+      color: #777;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-transform: capitalize;
+  
+      &:hover{
+        color: $color-black;
+      }
+    }
+    &__active{
+      color: $color-blue;
+      font-weight: 700;
+    }
+  }
+  

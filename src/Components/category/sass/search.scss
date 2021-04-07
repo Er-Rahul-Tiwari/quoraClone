@@ -1,0 +1,37 @@
+.category__search {
+    grid-column: col-start 2 / col-end 7;
+
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+
+    background-color: $color-white;
+    width: 100%;
+    border-radius: 10rem;
+    padding: 0.5rem;
+    box-shadow: 0 0 1rem rgba($color-black, 0.2);
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-top: 1rem;
+        grid-column: center-start/center-end;
+    }
+
+    &__grid-3 {
+        display: grid;
+        grid-template-columns: min-content 1fr max-content;
+    }
+
+    &__icon {
+        width: 2rem;
+        margin-left: 1rem;
+    }
+    &__input {
+        padding: 1rem;
+        border: none;
+        width: 100%;
+    }
+    &__btn {
+        border-radius: 10rem;
+    }
+}

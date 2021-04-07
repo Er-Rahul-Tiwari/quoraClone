@@ -1,0 +1,57 @@
+.profile{
+    grid-column: col-start 2 / center-end;
+
+        
+    @media only screen and (max-width: $bp-medium){
+        grid-column: full-start / full-end;
+        padding: 1rem;
+    }
+
+    
+    &__story{
+        grid-column: col-start 2 / col-end 5;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column-gap: 2rem;
+        align-items: center;
+        
+        @media only screen and (max-width: $bp-medium){
+            grid-column: full-start / full-end;
+            padding: 0 1.5rem;
+            grid-column-gap: 1rem;
+        }
+    }
+    &__detail{
+        font-size: 1.5rem;
+    }
+    &__follow{
+        grid-column: col-start 6 / center-end;
+        display: grid;
+        grid-template-columns: repeat(2,max-content);
+        justify-self: end;
+        grid-column-gap: 2rem;
+        text-transform: lowercase;
+        align-items: center;
+        
+        @media only screen and (max-width: $bp-medium){
+            grid-column: col-start 2 / full-end;
+            padding: 0 1.5rem;
+            justify-self: start;
+        }
+    }
+    &__follower{
+        background-color: $color-green;
+        display: grid;
+        align-self: center;
+        color: $color-white;
+        padding: 1rem 1.5rem;
+        border-radius: 2px;
+    }
+    &__following{
+        color: $color-green;
+        padding: 1rem 0;
+        display: grid;
+        align-self: center;
+    }
+    
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+.font {
+  font-family: "Manrope", sans-serif;
+}
+
+.collectaneaTitle {
+  font-size: 1.125rem;
+  line-height: 0.24rem;
+  font-weight: 600;
+}
+
+.createNew {
+  margin-left: 10%;
+  height: max-content;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+}
+
+.createNewText {
+  font-size: 1.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) {
+  .collectaneaTitle {
+    display: none;
+  }
+  .createNew {
+    font-size: 1.875rem;
+    line-height: 0.4375rem;
+    font-weight: 600;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1.5rem;
+  }
+}

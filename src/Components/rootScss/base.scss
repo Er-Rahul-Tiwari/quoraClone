@@ -1,0 +1,39 @@
+:root {
+  --section-rotate: 9vw;
+}
+
+::-moz-selection {
+  background-color: $color-primary-dark-3;
+  color: $color-secondary-light-3;
+}
+
+::selection {
+  background-color: $color-primary-dark-3;
+  color: $color-secondary-light-3;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-display;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: $color-app-light;
+  background-color: $color-white;
+}

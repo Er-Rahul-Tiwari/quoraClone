@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+.center {
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 1366px;
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+}
+
+.br {
+  display: none;
+}
+
+.danger{
+  color: #d9534f;
+}
+
+.labelText {
+  font-size: 1.5rem;
+  line-height: 0.3rem;
+  margin-top: 10px;
+  color: #312e2e;
+}
+
+.options {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.nextText {
+  color: #ffffff;
+  text-transform: none;
+  font-size: 1.375rem;
+  line-height: 0.3rem;
+}
+
+.inputBox {
+  background-color: #fafafa;
+  margin-bottom: 50px;
+}
+
+.label1 {
+  margin-left: 10%;
+  height: max-content;
+  -moz-user-select: none;
+  user-select: none;
+  display: block;
+}
+
+.label2 {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) {
+  .options {
+    width: 90%;
+    margin-top: 100px;
+  }
+  .br {
+    display: initial;
+  }
+  .label1 {
+    display: none;
+  }
+  .label2 {
+    display: initial;
+    font-size: 1.875rem;
+    line-height: 0.4375rem;
+    font-weight: 600;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1.5rem;
+  }
+  .center {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+  }
+  .your{
+    display: none;
+  }
+  .labelText {
+    font-size: 1.5rem;
+    line-height: 0.3rem;
+    margin-top: 10px;
+    color: #312e2e;
+    text-transform: capitalize;
+  }
+}

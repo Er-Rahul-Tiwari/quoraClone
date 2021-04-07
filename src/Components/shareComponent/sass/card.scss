@@ -1,0 +1,27 @@
+.share {
+    grid-column: col-start 2 / col-end 4;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 2rem;
+    }
+    &__card {
+        height: 30rem;
+        background-color: $color-primary-a;
+        border-radius: 0.6rem;
+    }
+    &__para {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    @media only screen and (max-width: $bp-small){
+
+        &__mt {
+            margin-top: 3rem;
+        display: grid;
+        align-items: center;
+        }
+    }
+}

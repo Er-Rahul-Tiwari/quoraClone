@@ -1,0 +1,55 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin aLink {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+%clamp {
+  display: block !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+@mixin clampLine-1 {
+  @extend %clamp;
+  -webkit-line-clamp: 1;
+}
+
+@mixin clampLine-2 {
+  @extend %clamp;
+  -webkit-line-clamp: 2;
+}
+
+@mixin clampLine-3 {
+  @extend %clamp;
+  -webkit-line-clamp: 3;
+}
+
+@mixin feature {
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+  }
+}

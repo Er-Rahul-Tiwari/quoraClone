@@ -1,0 +1,52 @@
+.contactInformation{
+    grid-column: col-start 2 / center-end;
+
+    display: grid;
+    grid-gap: 3rem;
+
+    margin: 5rem 0 7rem 0;
+
+        
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 0 1.5rem;
+    }
+
+
+    &__heading{
+        display: grid;
+        grid-template-columns: 1fr min-content;
+        align-items: start;
+    }
+
+    &__footerIcon{
+        display: grid;
+        grid-auto-flow: column;
+        justify-self: start;
+        grid-gap: 2rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-top: 2rem;
+        
+        @media only screen and (max-width: $bp-small){
+            grid-auto-flow: row;
+        }
+    }
+
+
+}
+
+.card{
+
+
+    &__column{
+        display: grid;
+        grid-auto-flow: column;
+        justify-self: start;
+        grid-gap: 1rem;
+        font-size: $font-18;
+    }
+    &__svg{
+        width: 2.5rem;
+    }
+}

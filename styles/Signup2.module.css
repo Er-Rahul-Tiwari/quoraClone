@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+.center {
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 1366px;
+  font-family: "Manrope", sans-serif;
+}
+
+.danger{
+  color: #d9534f;
+}
+
+.br {
+  display: none;
+}
+
+.buttonOptions {
+  display: inline-block;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #fafafa;
+}
+
+.labelText {
+  font-size: 1.5rem;
+  line-height: 0.3rem;
+  margin-top: 10px;
+  color: #312e2e;
+}
+
+.options {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.nextText {
+  color: #ffffff;
+  text-transform: none;
+  font-size: 1.375rem;
+  line-height: 0.3rem;
+}
+
+.inputBox {
+  background-color: #fafafa;
+  margin-bottom: 50px;
+}
+
+.alreadyAccount {
+  float: left;
+}
+
+.agreeWith {
+  float: right;
+}
+
+.emailLabel1 {
+  display: initial;
+}
+
+.emailLabel2 {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1) {
+  .options {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .br {
+    display: initial;
+  }
+  .alreadyAccount {
+    float: none;
+    text-align: center;
+  }
+  .agreeWith {
+    float: none;
+    text-align: center;
+  }
+  .emailLabel1 {
+    display: none;
+  }
+  .emailLabel2 {
+    display: initial;
+  }
+  .center {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+  }
+}

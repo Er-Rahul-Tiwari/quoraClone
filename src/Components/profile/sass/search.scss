@@ -1,0 +1,38 @@
+.profileNav__search{
+    grid-column: center-start/ col-end 5;
+
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+
+    background-color: $color-white;
+    width: 100%;
+    border-radius: 10rem;
+    padding: .5rem ;
+    box-shadow: 0 0 1rem rgba($color-black,.2);
+
+    &__grid-3{
+        display: grid;
+        grid-template-columns: min-content 1fr max-content;
+    }
+
+    &__icon{
+        width: 3rem;
+        margin-left: 1rem;
+    }
+    &__input{
+        padding: 1rem;
+        border: none;
+        width: 100%;
+    }
+    &__btn{
+        border-radius: 10rem;
+    }
+}
+
+@media only screen and (max-width: $bp-small){
+    .profileNav__search,
+    .profileNav__search__grid-3{
+        display: none;
+    }
+}

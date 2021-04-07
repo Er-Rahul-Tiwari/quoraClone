@@ -1,0 +1,159 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: $font-14;
+    padding: 1.2rem 1.8rem;
+    transition: all 0.2s;
+    position: relative;
+    color: $color-white;
+
+    cursor: pointer;
+    border: none;
+  }
+
+  &:hover {
+    background-color: $color-black-4f-op;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $color-black-4f;
+    outline: none;
+  }
+
+  &--black {
+    background-color: $color-black-4f;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-black-4f;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-black-4f;
+
+    &:hover {
+      background-color: $color-black-4f;
+      color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-black-4f;
+      color: $color-white;
+    }
+  }
+  &--green {
+    background-color: $color-green;
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-green-op;
+      color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-green;
+      color: $color-white;
+    }
+  }
+}
+
+.btn-border {
+  &:link,
+  &:visited {
+    font-size: $font-13;
+    border-radius: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $color-logo;
+    text-decoration: none;
+    border: 1px solid rgba(#4264fb, 0.05);
+    letter-spacing: 1px;
+    transition: all 0.2s;
+
+    &--p {
+      padding: 1rem 2rem;
+    }
+  }
+
+  &:hover {
+    color: $color-logo;
+    border: 1px solid $color-logo-op;
+    background-color: rgba(#4264fb, 0.02);
+  }
+
+  &:active {
+    background-color: $color-logo;
+    color: $color-white;
+  }
+}
+
+.btn-circle {
+  &,
+  &:link,
+  &:visited {
+    background-color: $color-white;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid $color-secondary-light-2;
+    padding: 0.8rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    line-height: 1;
+  }
+
+  svg {
+    fill: $color-secondary-light-3;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    width: 2.2rem !important;
+  }
+
+  &:hover {
+    color: $color-secondary-light-3;
+    border: 2px solid $color-secondary-light-3;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.width--100{
+  width: 100%;
+}
+
+.btn__small {
+  &,
+  &:link,
+  &:visited {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: $font-14;
+    transition: all 0.2s;
+    position: relative;
+    color: $color-white;
+
+    cursor: pointer;
+    border: none;
+  } 
+}

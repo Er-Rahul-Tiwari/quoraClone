@@ -1,0 +1,60 @@
+.slider {
+  width: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+
+  -moz-flex-auto-flow: column;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  width: 0rem;
+  height: 0rem;
+}
+
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: auto;
+  height: auto;
+  margin: 0.5rem 1rem 0.5rem 2px;
+  transform-origin: center center;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: $font-14;
+  color: $color-secondary-light-3;
+  text-transform: capitalize;
+}
+
+.slides > div {
+  background-color: $color-primary-2;
+  padding: 0 1.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    color: $color-app-dark;
+  }
+}

@@ -1,0 +1,29 @@
+.loader__box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+
+  &--blue {
+    background-color: $color-logo;
+  }
+}
+
+.loader {
+  border: 2px solid #fff;
+  border-radius: 10rem;
+  border-top: 2px solid $color-logo-op;
+  width: 1.6rem;
+  height: 1.6rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

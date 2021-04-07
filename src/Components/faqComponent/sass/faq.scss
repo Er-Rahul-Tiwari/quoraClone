@@ -1,0 +1,16 @@
+.faq{
+    grid-column: col-start  2/ col-end 6;
+    
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 0 1.5rem;
+
+        &__mt{
+            margin-top: 3rem;
+        }
+    }
+}
+.accordion{
+    display: grid;
+    margin-bottom: 2rem;
+}

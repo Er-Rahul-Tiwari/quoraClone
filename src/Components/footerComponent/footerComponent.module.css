@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+.alreadyAccount{
+    float: left;
+}
+
+.agreeWith{
+    float: right;
+}
+
+.forgotPassword{
+    float: left;
+    display: initial;
+}
+
+.footer{
+    font-family: 'Manrope', sans-serif;
+    border-top: solid 2px #ccc;        
+    width: 100%;    
+}
+
+.footerTextPrimary{
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 0.1875rem;
+    opacity: 70%;
+    display: inline-block;
+}
+
+.footerTextSecondary{
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 0.1875rem;    
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footerInside{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-device-width: 320px) 
+and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1){    
+    .options{
+        width: 90%;
+        margin: 0 auto    
+    }    
+    .alreadyAccount{
+        float: none;
+        text-align: center;
+    }    
+    .agreeWith{
+        float: none;
+        text-align: center;
+    }            
+    .footer{        
+        font-family: 'Manrope', sans-serif;
+        border-top: solid 0px #ccc;
+        bottom: 0;
+        position: absolute;        
+        width: 100%;        
+    }
+    .footerInside{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }   
+    .forgotPassword{
+        float: none;
+        display: none;
+    } 
+}

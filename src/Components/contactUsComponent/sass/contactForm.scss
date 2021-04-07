@@ -1,0 +1,50 @@
+
+.contactUs__arr{
+    grid-column: col-start 2 / center-end;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 0 1.5rem;
+        margin-top: 3rem;
+    }
+}
+.contactForm{
+    grid-column: col-start 5/ col-end 6;
+
+    background-color: $color-primary-a;
+    padding:   3rem 2rem;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start/full-end;
+        margin: 0 1.5rem;
+    }
+
+    &__input{
+        outline: none;
+        border:none;
+        font-family: inherit;
+        width: 100%;
+        border-bottom: 1px solid $color-6;
+        padding: 1rem 0;
+        background-color: $color-primary-a;
+
+    }
+    &__checkBox{
+        display: grid;
+        align-items: center;
+        justify-content: start;
+        grid-auto-flow: column;
+        grid-column-gap: 1rem;
+    }
+    &__radio{
+        font-size: $font-10;
+    }
+
+    &__label{
+        font-size: $font-11;
+        text-align: center;
+        font-weight: 700;
+    }
+}

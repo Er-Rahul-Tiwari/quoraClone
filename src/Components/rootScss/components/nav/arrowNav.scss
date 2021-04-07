@@ -1,0 +1,47 @@
+.arrNavs{
+    grid-column: col-start 2 / center-end;
+
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 0 1.5rem;
+    }
+}
+.arrNav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+
+    @media only screen and (max-width: $bp-small){
+        grid-template-columns: min-content 1fr;
+        grid-gap: 1rem;
+    }
+    &__icon{
+        width: 2.5rem;
+        stroke: $color-black-4f;
+        stroke-width: 2px;
+
+        grid-row: 1/2;
+        grid-column: 1/-1;
+    }
+    &__heading{
+
+        grid-row:  2 / 3;
+        grid-column: 1 / 2;
+        justify-self: start;
+    }
+    &__setting{
+        font-size: $font-20;
+        font-weight: 600;
+        text-transform: capitalize;
+
+        grid-row: 2 / 3;
+        grid-column: 2/3;
+        justify-self: end;
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+        grid-column-gap: 1rem;
+    }
+}

@@ -1,0 +1,120 @@
+.profileNav{
+    grid-column: full-start/ full-end;
+
+    
+    display: grid;
+    grid-auto-flow: column;
+    padding: 2rem 5rem;
+    align-items: center;
+    
+    &__heading{
+        grid-column: col-start 2/ center-end;
+
+        
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 1.5rem;
+    }
+
+    &--border{
+        border: 1px solid $color-secondary;
+        padding: 0 1rem;
+        border-radius: 2px;
+    }
+
+    &--box{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
+        align-items: center;
+    }
+    &--item{
+        display: grid;
+        grid-auto-flow: column;
+        // justify-self: start;
+        align-items: center;
+
+        &-1{
+            display: grid;
+            grid-template-columns: 1f 1fr;
+            justify-content: start;
+            grid-gap: 2rem;
+        }
+        &-2{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: end;
+            grid-gap: 1rem;
+        }
+
+    }
+    
+    }
+    &__logo{
+    }
+    
+    &__items{
+        display: grid;
+        // grid-auto-flow: column;
+    }
+    &--1{
+        float: right;
+    }
+    &--2{
+        float: right;
+        margin-left: 1rem;
+    }
+    &__notificaion{
+        background-color: $color-red;
+        width: .7rem;
+        height: .7rem;
+        border-radius: 50%;
+
+        // display: grid;
+        // align-items: end;
+        // justify-content: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__box{
+        background-color: $color-primary-dark-2;
+        padding: 1rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+    &__background{
+        background-color: $color-primary-dark-2;
+        padding: 1rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+
+    }
+    &__icon{
+        width: 2rem;
+    }
+    
+}
+
+.bp__small--show{
+    display: none;
+}
+
+@media only screen and (max-width: $bp-small){
+
+    .bp__small--show{
+        display: block;
+    }
+    .bp__small--none{
+        display: none;
+    }
+}

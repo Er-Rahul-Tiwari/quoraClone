@@ -1,0 +1,52 @@
+.report{
+    grid-column: col-start 2/ center-end;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 0 2rem;
+    }
+
+    &__select{
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+        font-size: $font-18;
+        background-color: $color-primary-a;
+        border: none;
+        outline: none;
+    }
+
+    &__area{
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: $color-primary-a;
+        padding: 1rem;
+
+    }
+
+    &__btn{
+        padding: 1.5rem 4rem;
+        background-color: $color-black-4f;
+        border: none;
+        outline: none;
+        color: $color-white;
+        font-size: $font-15;
+        border-radius: 2px;
+
+    }
+    &__box{
+        display: grid;
+        justify-items: end;
+        margin-top: 2rem;
+
+        @media only screen and (max-width: $bp-small){
+            justify-items: normal;
+        }
+}
+    &__mt{
+        display: grid;
+        align-items: center;
+    }
+}

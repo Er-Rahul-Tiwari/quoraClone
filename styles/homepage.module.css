@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+.collectnea{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 30px;    
+}
+
+.subsection{
+    color: #000000;
+    float: right;
+    margin-right: 5%;
+    opacity: 70%;
+}

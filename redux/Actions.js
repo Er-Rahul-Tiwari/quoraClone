@@ -1,0 +1,6 @@
+export const ADD_PROFILE_INFO = "ADD_PROFILE_INFO";
+
+export const UPDATE_PAGE_DATA = "UPDATE_PAGE_DATA";
+
+// rt
+export const REPORT_CREATED = "REPORT_CREATED";

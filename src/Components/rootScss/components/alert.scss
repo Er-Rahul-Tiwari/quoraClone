@@ -1,0 +1,41 @@
+.alert-danger {
+  color: $color-red-op;
+}
+
+.alert-success {
+  color: $color-green;
+}
+
+.alert-warning {
+  color: $color-yellow-star-op;
+}
+
+.alert-info {
+  color: $color-yellow-star-op;
+}
+
+.notification-error {
+  background-color: $color-white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.notification-error .message {
+  color: #bd362f;
+}
+
+.notification-error::before {
+  color: #bd362f;
+}
+
+.notification-success {
+  background-color: $color-white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.notification-success::before {
+  color: #51a351;
+}
+
+.notification-success .message {
+  color: #51a351;
+}

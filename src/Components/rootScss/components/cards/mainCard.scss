@@ -1,0 +1,182 @@
+.cards{
+    display: grid;
+    grid-row-gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 3rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+
+    background-color: $color-primary-a;
+    padding: 3rem;
+    border-radius: .4rem;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column-gap: 1rem;
+        padding: 1rem;
+    }
+    &__img,
+    &__avtar{
+        width: 10rem;
+        height: 10rem;               
+
+        grid-column:  1 / 2;
+        object-fit: cover;
+
+        @media only screen and (max-width: $bp-small){
+            width: 3rem;
+            height: 3rem;
+        }
+    }   
+
+    &__avtarName{
+        width: 8rem;
+        height: 6rem;        
+        overflow: hidden;
+
+        grid-column:  1 / 2;
+
+        @media only screen and (max-width: $bp-small){
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+  
+
+    &__bg{
+        &--1{
+            background-color: $color-green;
+        }
+        &--2{
+            background-color: $color-skyblue-light;
+        }
+        &--3{
+            background-color: $color-red;
+        }
+        &--4{
+            background-color: $color-skyblue-dark;
+        }
+    }
+    &__cart{
+        grid-row: 1 / 2;
+        grid-column: 2 / -1;
+
+        display: grid;
+        justify-self: end;
+    }
+    &__icon,
+    &__upPolygon,
+    &__downPolygon{
+        width: 2.4rem;
+        height: 2.4rem;
+
+        fill: $color-primary-dark-4;        
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-small){
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    &__items{
+        grid-row: 1 / 2;
+        grid-column: 2 / -1;
+
+        display: grid;
+        align-content: end;
+        width: 95%;
+    }
+    &__heading{
+        font-size: $font-16;
+        font-weight: 600;
+        line-height: 1.2;
+        color: $color-5;
+    }
+    &__topAnswer{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+
+        font-size: $font-15;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        color: $color-5;
+    }
+    &__reply{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+
+        font-size: $font-13;
+        line-height: 1.3;
+        color: $color-secondary-light-2;
+        width: 95%;
+
+    }
+    &__countReply{
+        grid-row: 3/5;
+        grid-column: 2 / -1;
+
+        display: grid;
+        justify-self: end;
+        justify-items: center;
+    }
+
+    &__box{
+        grid-row: 2/4;
+        grid-column: 1 / -1;
+        margin-top: 2rem;
+    }
+    &__progress{
+        display: grid;
+        grid-auto-flow: column;
+        font-size: $font-12;
+        border-bottom: 2px solid $color-green-4;
+        margin-bottom: 1rem;
+        
+        &--48{
+            width: 48%;
+        }
+        &--15{
+            width: 15%;
+        }
+        &--37{
+            width: 37%;
+        }
+
+        &--name{
+            display: grid;
+            justify-self: start;
+        }
+        &--value{
+            display: grid;
+            justify-self: end;
+        }
+    }
+    &__links{
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+
+        font-size: $font-12;
+        color: $color-secondary-light-2;
+        margin-top: 1rem;
+
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-auto-flow: column;
+        justify-content: start;
+    }
+    &__btn{
+        grid-column: 2 / -2;
+        grid-row: 6 / 7;
+
+        display: grid;
+        justify-self: end;
+
+        padding: .5rem 1rem;
+        border-radius: 2px;
+        text-transform: lowercase;
+        margin-top: 2rem;
+    }
+}

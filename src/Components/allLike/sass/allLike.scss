@@ -1,0 +1,41 @@
+.allLike{
+    grid-column: col-start 2 / center-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(35rem,1fr));
+    grid-gap: 2rem;
+    
+    @media only screen and (max-width: $bp-small){
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        
+    }
+
+    &__items{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: end;
+        grid-gap: 3rem;
+
+        color: $color-secondary-light-1;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+    &__link{
+        padding: 2px 1rem;
+        border-radius: 2px;
+
+        &--active{
+            background-color: $color-primary-a;
+            color: $color-secondary;
+        }
+    }
+    &__icon{
+        width: 2.6rem;
+        height: 2.6rem;
+        stroke: $color-secondary-light-3;
+        stroke-width: 2px;
+
+        display: grid;
+        align-self: center;
+    }
+}

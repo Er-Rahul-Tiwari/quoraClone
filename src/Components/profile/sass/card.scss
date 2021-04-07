@@ -1,0 +1,16 @@
+.share__cards{
+    grid-column: col-start 3/col-end 6;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem;
+}
+.share__card{
+    height: 30rem;
+    background-color: $color-primary-a;
+    border-radius: .6rem;
+}
+.share__para{
+    text-align: center;
+    margin: 1rem 0;
+}

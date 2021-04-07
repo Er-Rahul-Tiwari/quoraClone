@@ -1,0 +1,65 @@
+.allNotification{
+    grid-column: col-start 2 / center-end;
+
+    display: grid;
+    grid-gap: 2rem;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 0 1.5rem;
+    }
+
+    &__items{
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 3rem;
+
+        color: $color-secondary-light-1;
+        font-weight: 600;
+        text-transform: capitalize;
+
+        &--start{
+            justify-content: start;
+        }
+        &--end{
+            justify-content: end;
+        }
+    }
+    &__link{
+        padding: 2px 1rem;
+        border-radius: 2px;
+        color: $color-6;
+        font-size: $font-14;
+
+        &--active{
+            background-color: $color-primary-a;
+            color: $color-secondary;
+        }
+        &--active--black{
+            background-color: $color-black-4f;
+            color: $color-white;
+        }
+    }
+    &__icon{
+        width: 2.6rem;
+        height: 2.6rem;
+        stroke: $color-secondary-light-3;
+        stroke-width: 2px;
+
+        display: grid;
+        align-self: center;
+    }
+}
+
+.card{
+
+    
+    &__border{
+    grid-row: 2/5;
+    grid-column: 1/-1;
+    border: 2px solid $color-primary-dark-2;
+
+    padding: 0rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+    }
+}

@@ -1,0 +1,92 @@
+// COLOR VARIABLES
+$color-primary: #f7fafc; // Background--1
+$color-primary-sub: #f8fafc; // Background--sub
+$color-primary-1: #fff; // Background
+$color-primary-a: #fafafa; // Background--2
+$color-primary-2: #f9f9fa; // Background--2
+$color-primary-3: #fcfcfc; // Background--3
+
+$color-primary-dark: #e3e8ee; // footer background
+$color-primary-dark-1: #eee; // light paragraph
+$color-primary-dark-2: #e3e3e3; // light-2 paragraph
+$color-primary-dark-3: #ddd; // light paragraph
+$color-primary-dark-4: #ccc; // light paragraph
+
+$color-secondary: #222325; // Heading
+$color-secondary-dark: #101d2c;
+
+$color-secondary-light-1: #999; // paragraph
+$color-secondary-light-2: #777; // paragraph
+$color-secondary-light-3: #333; // paragraph
+$color-4: #444; // paragraph
+$color-5: #555; // paragraph
+$color-6: #666; // paragraph
+
+$color-app-white-light: #f5f5f7; // app white light
+$color-app-light: #312e2e; // app light
+$color-app-dark: #1d1d1f; // app dark
+$color-blue-app-link: #0070c9; // app link
+
+//Box-background-color i.e,. light-weighted
+
+$color-green-light: #efffed;
+$color-green-light-2: #E8FAF5; // replies to replies
+$color-gray-light: #f7fafc;
+$color-red-light: #fff8f5;
+
+$color-logo: #4264fb; // Logo color
+$color-logo-dark: rgba(#4264fb, 0.7); // Logo light color
+$color-logo-op: rgba(#4264fb, 0.5); // Logo light color
+
+$color-black-4f: #4f4f4f;
+$color-black-4f-op: rgba(79, 79, 79,.9);
+
+$color-white: #fff;
+$color-white-op: rgba(#fff, 0.9);
+$color-black: #000;
+$color-black-op: rgba(#000, 0.9);
+$color-black-card-title: #3c3b37;
+$color-black-card-title-op: rgba(#3c3b37, 0.9);
+$color-skyblue-light:#88C0C6; // avtar
+$color-skyblue-dark:#53B4DD; // avtar
+$color-blue: #4285f4; // Button & Link
+$color-blue-op: rgba(#4285f4, 0.9);
+$color-red: #F37068; // Error Message
+$color-red-op: rgba(#F37068, 0.9);
+$color-red-dark: #45091b;
+$color-yellow: #f9ab00; // Warning/Alert Message
+$color-yellow-light: #ffe48c; // background with invite or share
+$color-yellow-op: rgba(#f9ab00, 0.9);
+$color-yellow-2: #be5a0e;
+$color-yellow-2-op: rgba(190, 90, 14, 0.9);
+$color-yellow-star: #eb8a2f;
+$color-yellow-star-op: rgba(235, 138, 47, 0.9);
+$color-green: #3ABD98; // Sucess Message
+$color-green-op: rgba(#3ABD98, 0.9);
+$color-green-4: #4BB297; // grid
+
+// FONT VARIABLES
+$font-primary: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+  "Arial", sans-serif;
+$font-secondary: "Nunito", sans-serif;
+$font-display-1: "Josefin", sans-serif;
+$font-display: "Roboto", sans-serif;
+// Font Sizes
+$font-10: 1rem;
+$font-11: 1.1rem;
+$font-12: 1.2rem;
+$font-13: 1.3rem;
+$font-14: 1.4rem;
+$font-15: 1.5rem;
+$font-16: 1.6rem;
+$font-17: 1.7rem;
+$font-18: 1.8rem;
+$font-19: 1.9rem;
+$font-20: 2rem;
+
+// RESPONSIVE BREACK POINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-smallLarge: 37.5em; // 600px
+$bp-small: 30em; // 500px

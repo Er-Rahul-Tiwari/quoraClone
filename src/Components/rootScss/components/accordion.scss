@@ -1,0 +1,74 @@
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.accordion label {
+  display: block;
+  background-color: $color-primary-a;
+}
+
+.accordion {
+  // margin-bottom: 1em;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  // border: 1px solid $color-primary-2;
+  padding: 3rem;
+  border-radius: 3px;
+  background-color: $color-primary-3;
+}
+
+.accordion .handle {
+  // margin: 0;
+  // line-height: 1.2em;
+}
+
+.accordion label {
+  color: $color-secondary-light-3;
+  cursor: pointer;
+  // font-weight: normal;
+  padding: 1.5rem;
+  // background: $color-primary-2;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  // background: $color-primary-3;
+}
+
+.accordion .handle label:before {
+  content: "+";
+  display: inline-block;
+  margin-right: 10px;
+  // font-size: .58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+  float: right;
+  clear: both;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "x";
+}
+
+.accordion {
+  max-width: 65em;
+}
+
+.accordion p:last-child {
+  margin-bottom: 0;
+}

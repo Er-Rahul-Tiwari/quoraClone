@@ -1,0 +1,223 @@
+.navIcons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 1rem;
+  align-items: center;
+  justify-items: end;
+  grid-column: col-start 7 / center-end;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-column: col-start 7 / full-end;
+    padding-right: 1.5rem;
+  }
+}
+.navIcon {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  justify-items: center;
+
+  &__background {
+    background-color: $color-primary-dark-2;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    z-index: 1;
+  }
+  &__notification {
+    background-color: $color-red;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    z-index: 3;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    justify-self: end;
+    align-self: start;
+    margin-right: px;
+  }
+  &__icon {
+    width: 2rem;
+    stroke: $color-secondary-light-3;
+    stroke-width: 2px;
+    z-index: 2;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+  &__img {
+    width: 3rem;
+    border-radius: 50%;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+}
+
+.nav__logo {
+  grid-column: center-start / col-end 1;
+  padding: 3rem 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  color: $color-black-4f;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-column: col-start 2 / col-end 6;
+    display: grid;
+    justify-self: center;
+  }
+}
+
+.nav__backArrow {
+  @media only screen and (max-width: $bp-small) {
+    grid-column: full-start / col-end 1;
+    padding: 3rem 0 3rem 1.5rem;
+  }
+
+  &--icon {
+    width: 3rem;
+  }
+}
+
+.nav {
+  grid-column: col-start 2 / col-end 5;
+  padding: 3rem 0;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-row: 2/3;
+    grid-column: full-start / full-end;
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+
+  &__heading {
+    grid-column: col-start 2 / center-end;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: full-start / full-end;
+      padding: 1.5rem;
+    }
+  }
+}
+
+.nav__search {
+  grid-column: center-start/ col-end 3;
+  align-items: center;
+  border-radius: 10rem;
+  padding: 1px;
+  box-shadow: 0 0 0.5rem rgba($color-black, 0.15);
+
+  &__grid-3 {
+    display: grid;
+    grid-template-columns: min-content 1fr max-content;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    margin-left: 1rem;
+  }
+  &__input {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    width: 100%;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  &__btn {
+    border-radius: 10rem;
+  }
+}
+
+.nav__search_up {
+  grid-column: center-start/ col-end 5;
+  align-items: center;
+  border-radius: 10rem;
+  padding: 1px;
+  box-shadow: 0 0 0.5rem rgba($color-black, 0.15);
+
+  &__grid-3 {
+    display: grid;
+    grid-template-columns: min-content 1fr max-content;
+  }
+
+  &__icon {
+    width: 1.5rem;
+    margin-left: 1rem;
+  }
+  &__input {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    width: 100%;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  &__btn {
+    border-radius: 10rem;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .bpLarge__none {
+    display: none;
+  }
+  .bpLarge__display {
+    display: block !important;
+  }
+  .visibility__none {
+    visibility: hidden;
+  }
+}
+
+.bpLarge__display {
+  display: none;
+}
+
+.nav__drop {
+  display: grid;  
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: 1rem;
+  grid-auto-flow: column;
+  justify-items: start;
+  align-items: start;
+}
+
+
+ 
+.navSign {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-column: col-start 7 / center-end;
+  grid-column-gap: 1rem;
+  align-items: center;
+  justify-content: end;
+  @media only screen and (max-width: $bp-medium) {
+    margin-right: 0.4rem;
+    grid-column: col-start 7 / full-end;
+    grid-column-gap: 0.4rem;
+  }
+  &__btn {
+    border: none;
+    background-color: $color-primary-a;
+    color: $color-black-4f;
+    border-radius: 3px;
+    padding: 1rem 3rem;
+    font-size: $font-15;
+    font-weight: 600;
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0.3rem 0.7rem;
+    }
+    &:hover {
+      background-color: $color-black-4f;
+      color: $color-white;
+    }
+  }
+}

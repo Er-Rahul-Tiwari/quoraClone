@@ -1,0 +1,72 @@
+.editProfileNav{
+    grid-column: full-start/ full-end;
+
+    
+    display: grid;
+    grid-auto-flow: column;
+    padding: 1.5rem;
+    align-items: center;
+    
+    &__heading{
+        grid-column: col-start 2/ center-end;
+
+        
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+        padding: 1.5rem;
+    }
+    
+    }
+    &__logo{
+    }
+    
+    &__items{
+        display: grid;
+        // grid-auto-flow: column;
+    }
+    &--1{
+        float: right;
+    }
+    &--2{
+        float: right;
+        margin-left: 1rem;
+    }
+    &__notificaion{
+        background-color: $color-red;
+        width: .7rem;
+        height: .7rem;
+        border-radius: 50%;
+
+        // display: grid;
+        // align-items: end;
+        // justify-content: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__box{
+        background-color: $color-primary-dark-2;
+        padding: 1rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+    &__background{
+        background-color: $color-primary-dark-2;
+        padding: 1rem;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+
+    }
+    &__icon{
+        width: 2rem;
+    }
+    
+}
